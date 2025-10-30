@@ -5,9 +5,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-  body {
+body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
 }
@@ -25,7 +26,7 @@
 /*INDEX*/
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0px 60px;
   height: 10vh;
@@ -58,18 +59,6 @@
   font-weight: 500;
 }
 
-.boton-compra {
-  border: none;
-  background: transparent;
-  padding: 7px 8px;
-  cursor: pointer;
-}
-
-.boton-compra img {
-  width: 25px;
-  height: 25px;
-}
-
 .inicio {
   display: flex;
   justify-content: space-around;
@@ -100,7 +89,7 @@
   height: 60vh;
 }
 
-.producto1{
+.producto1 {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -113,7 +102,7 @@
   width: 400px;
 }
 
-.producto2{
+.producto2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -126,7 +115,7 @@
   width: 400px;
 }
 
-.producto3{
+.producto3 {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -139,7 +128,7 @@
   width: 400px;
 }
 
-.producto4{
+.producto4 {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -152,17 +141,17 @@
   width: 400px;
 }
 
- .texto-productos{
+.texto-productos {
   color: #fff;
   font-weight: 900;
- }
+}
 
-.boton-productos{
+.boton-productos {
   background: none;
   border: none;
 }
 
-.boton-productos img{
+.boton-productos img {
   width: 50px;
   height: 50px;
 }
@@ -174,27 +163,27 @@
   padding: 60px 40px;
 }
 
-.contenido-capsula .izquierda{
+.contenido-capsula .izquierda {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: black;
 }
 
-.contenido-capsula .derecha{
+.contenido-capsula .derecha {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: black;
 }
 
-.contenido-capsula .izquierda h2{
+.contenido-capsula .izquierda h2 {
   font-size: 50px;
   font-weight: 800;
 }
 
-.contenido-capsula .derecha h2{
-    font-size: 50px;
+.contenido-capsula .derecha h2 {
+  font-size: 50px;
   font-weight: 800;
 }
 
@@ -227,27 +216,28 @@
   font-size: 20px;
 }
 
-.Fotter-tienda img{
+.Fotter-tienda img {
   position: absolute;
   right: -40px;
   bottom: -110px;
   width: 500px;
 }
 
-.Fotter{
+.Fotter {
   height: 12vh;
 }
 
-.Fotter h2{
+.Fotter h2 {
   padding-top: 45px;
   text-align: center;
   font-size: 20px;
   margin-bottom: 0;
 }
+
 /*FIN INDEX*/
 
 /*FARMACOS*/
-.fondo1-farmaco{
+.fondo1-farmaco {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -260,54 +250,54 @@
   padding-right: 150px;
 }
 
-.fondo1-farmaco h2{
+.fondo1-farmaco h2 {
   font-weight: 800;
   font-size: 40px;
 }
 
-.fondo1-farmaco p{
+.fondo1-farmaco p {
   font-weight: 500;
   width: 60vh;
   font-size: 25px;
 }
 
-.fondo2-farmaco{
+.fondo2-farmaco {
   height: 100vh;
   overflow: hidden;
 }
 
-.fondo2-farmaco .carousel .carousel-inner .carousel-item .w-100{
+.fondo2-farmaco .carousel .carousel-inner .carousel-item .w-100 {
   width: 100vh;
   height: 100vh;
 }
 
-.fondo3-farmaco{
+.fondo3-farmaco {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.fondo3-farmaco div{
+.fondo3-farmaco div {
   width: 70%;
   height: 70%;
   background-color: rgba(0, 100, 100, 0.150);
   border-radius: 20px;
 }
 
-.fondo3-farmaco div h2{
+.fondo3-farmaco div h2 {
   padding-top: 100px;
   text-align: center;
   font-size: 70px;
 }
 
-.fondo3-farmaco div p{
+.fondo3-farmaco div p {
   padding-top: 100px;
   padding-left: 100px;
   font-size: 30px;
 }
 
-.fondo4-farmaco{
+.fondo4-farmaco {
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
@@ -315,7 +305,7 @@
   height: 88vh;
 }
 
-.absorcion{
+.absorcion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -328,7 +318,7 @@
   color: #fff;
 }
 
-.distribucion{
+.distribucion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -341,7 +331,7 @@
   color: #fff;
 }
 
-.metabolismo{
+.metabolismo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -354,7 +344,7 @@
   color: #fff;
 }
 
-.excrecion{
+.excrecion {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -368,49 +358,50 @@
   color: #fff;
 }
 
-.absorcion h2{
+.absorcion h2 {
   font-weight: 800;
   font-size: 40px;
 }
 
-.distribucion h2{
+.distribucion h2 {
   font-weight: 800;
   font-size: 40px;
 }
 
-.metabolismo h2{
+.metabolismo h2 {
   font-weight: 800;
   font-size: 40px;
 }
 
-.excrecion h2{
+.excrecion h2 {
   font-weight: 800;
   font-size: 40px;
 }
 
-.absorcion p{
+.absorcion p {
   font-weight: 500;
   font-size: 25px;
 }
 
-.distribucion p{
+.distribucion p {
   font-weight: 500;
   font-size: 25px;
 }
 
-.metabolismo p{
+.metabolismo p {
   font-weight: 500;
   font-size: 25px;
 }
 
-.excrecion p{
+.excrecion p {
   font-weight: 500;
   font-size: 25px;
 }
+
 /*FIN FARMACOS*/
 
 /*SUPLEMENTOS*/
-.suple1{
+.suple1 {
   height: 90vh;
   display: grid;
   justify-items: center;
@@ -419,19 +410,19 @@
   gap: 20px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "a a b d e e"
-  "a a c d f f"
+  grid-template-areas:
+    "a a b d e e"
+    "a a c d f f"
   ;
 }
 
-.suple1 .item{
+.suple1 .item {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
 
-.suple1 .a{
+.suple1 .a {
   background-image: url(../img/colageno.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -439,7 +430,7 @@
   grid-area: a;
 }
 
-.suple1 .b{
+.suple1 .b {
   background-image: url(../img/curcumina.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -447,7 +438,7 @@
   grid-area: b;
 }
 
-.suple1 .c{
+.suple1 .c {
   background-image: url(../img/probioticos.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -455,7 +446,7 @@
   grid-area: c;
 }
 
-.suple1 .d{
+.suple1 .d {
   background-image: url(../img/te-ver-matcha.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -463,7 +454,7 @@
   grid-area: d;
 }
 
-.suple1 .e{
+.suple1 .e {
   background-image: url(../img/suple-o3.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -471,7 +462,7 @@
   grid-area: e;
 }
 
-.suple1 .f{
+.suple1 .f {
   background-image: url(../img/espirulina.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -479,28 +470,28 @@
   grid-area: f;
 }
 
-.suple2{
+.suple2 {
   height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.suple2 div{
+.suple2 div {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.suple2 div h2{
+.suple2 div h2 {
   font-size: 50px;
 }
 
-.suple2 div p{
+.suple2 div p {
   font-size: 20px;
 }
 
-.suple3{
+.suple3 {
   height: 88vh;
   display: grid;
   justify-items: center;
@@ -509,14 +500,14 @@
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
-  "z x x"
-  "z x x"
-  "y y y"
+  grid-template-areas:
+    "z x x"
+    "z x x"
+    "y y y"
   ;
 }
 
-.suple3 .div{
+.suple3 .div {
   display: flex;
   justify-items: center;
   align-items: center;
@@ -525,92 +516,294 @@
   border-radius: 25px;
 }
 
-.suple3 .div p{
+.suple3 .div p {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
   padding: 25px;
 }
 
-.suple3 .x{
+.suple3 .x {
   background-color: rgba(43, 153, 21, 0.205);
   grid-area: x;
 }
 
-.suple3 .y{
+.suple3 .y {
   background-color: rgba(43, 153, 21, 0.205);
   grid-area: y;
 }
 
-.suple3 .z{
+.suple3 .z {
   background-color: rgba(43, 153, 21, 0.205);
   grid-area: z;
 }
+
 /*FIN SUPLEMENTOS*/
 
 /*TIENDA*/
-.unosolo{
+.unosolo {
   height: 78vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.unosolo .card{
+.unosolo .card {
   border: solid 1px darkgreen;
 }
 
-.unosolo .card .card-body .btn{
+.unosolo .card .card-body .btn {
   border: none;
   background-color: darkgreen;
 }
+
 /*FIN TIENDA*/
 
 /*CONTACTO*/
-.contacto{
+.contacto {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 78vh;
 }
 
-.contacto form{
+.contacto form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
 }
 
-.contacto form label{
+.contacto form label {
   font-size: 18px;
   font-weight: 800;
   padding-top: 20px;
   padding-bottom: 5px;
 }
 
-.contacto form input{
+.contacto form input {
   width: 300px;
   height: 35px;
-  border: solid 0,5px black;
+  border: solid 0, 5px black;
 }
 
-.contacto form textarea{
+.contacto form textarea {
   width: 300px;
   height: 35px;
   border-radius: 5px;
 }
 
-.contacto form a{
+.contacto form a {
   padding-top: 20px;
   padding-left: 70px;
 }
 
-.contacto form a button{
+.contacto form a button {
   font-size: 20px;
 }
 
-.contacto form .fin{
+.contacto form .fin {
   width: 150px;
 }
 
 /*FIN CONTACTO*/
+
+
+
+
+
+/*MEDIA QUERIS */
+
+/*TABLET*/
+
+/*CELULAR*/
+@media (min-width: 320px) and (max-width: 430px) {
+  .botones {
+    padding: 8px 8px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .header .logo {
+    font-size: 20px;
+  }
+
+  .header nav {
+    padding: 0px 0px;
+    width: 100%;
+  }
+
+  .header ul {
+    gap: 10px;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+    .header ul li {
+    padding-bottom: 5px;
+  }
+
+  .header a {
+    font-size: 9px;
+  }
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+    height: 90vh;
+  }
+
+  .inicio .inicio-img img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .texto-inicio h1 {
+    font-size: 40px;
+  }
+
+  .texto-inicio p {
+    font-size: 15px;
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .producto1 {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .producto2 {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    background-position: center 40%;
+  }
+
+  .producto3 {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    background-position: center 50%;
+  }
+
+  .producto4 {
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    background-position: center 55%;
+  }
+
+  .texto-productos {
+    margin: 0;
+  }
+
+  .boton-productos {
+    background: none;
+    border: none;
+  }
+
+  .boton-productos img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contenido-capsula {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenido-capsula .izquierda h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .contenido-capsula .derecha h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .contenido-capsula .izquierda p {
+    font-size: 8px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .contenido-capsula .derecha p {
+    font-size: 8px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .Fotter-tienda {
+    margin: 0px 10px;
+    height: 10vh;
+    position: relative;
+    justify-content: start;
+    padding: 0px 20px
+  }
+
+  .Fotter-tienda .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .Fotter-tienda .texto h2 {
+    font-size: 15px;
+    width: 200px;
+  }
+
+  .Fotter-tienda .texto a {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+    .Fotter-tienda .texto .botofin {
+    padding: 5px 0px;
+    font-size: 12px;
+    width: 90px;
+  }
+
+  .Fotter-tienda img {
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    width: 140px;
+  }
+
+  .Fotter {
+    height: 12vh;
+  }
+
+  .Fotter h2 {
+    padding-top: 45px;
+    font-size: 11px;
+  }
+}
