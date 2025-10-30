@@ -612,19 +612,12 @@ body {
 
 
 
-/*MEDIA QUERIS */
+/************ MEDIA QUERIS ************/
 
 /*TABLET*/
 
 /*CELULAR*/
 @media (min-width: 320px) and (max-width: 430px) {
-  .botones {
-    padding: 8px 8px;
-    border: none;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-  }
 
   .header {
     display: flex;
@@ -650,11 +643,11 @@ body {
     padding-right: 10px;
   }
 
-    .header ul li {
+  .header ul li {
     padding-bottom: 5px;
   }
 
-  .header a {
+  .header ul li a {
     font-size: 9px;
   }
 
@@ -667,7 +660,7 @@ body {
     height: 90vh;
   }
 
-  .inicio .inicio-img img{
+  .inicio .inicio-img img {
     width: 100%;
     height: 100%;
   }
@@ -719,11 +712,6 @@ body {
     margin: 0;
   }
 
-  .boton-productos {
-    background: none;
-    border: none;
-  }
-
   .boton-productos img {
     width: 40px;
     height: 40px;
@@ -732,6 +720,14 @@ body {
   .contenido-capsula {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+  }
+
+  .contenido-capsula img {
+    width: 300px;
+    height: 300px;
   }
 
   .contenido-capsula .izquierda h2 {
@@ -780,12 +776,7 @@ body {
     width: 200px;
   }
 
-  .Fotter-tienda .texto a {
-    margin-bottom: 0;
-    font-size: 20px;
-  }
-
-    .Fotter-tienda .texto .botofin {
+  .Fotter-tienda .texto .botofin {
     padding: 5px 0px;
     font-size: 12px;
     width: 90px;
