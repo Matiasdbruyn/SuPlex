@@ -634,10 +634,11 @@ body {
   .header nav {
     padding: 0px 0px;
     width: 100%;
+    border-radius: 12px;
   }
 
   .header ul {
-    gap: 10px;
+    gap: 5px;
     justify-content: space-evenly;
     padding-left: 10px;
     padding-right: 10px;
@@ -648,7 +649,7 @@ body {
   }
 
   .header ul li a {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .inicio {
@@ -826,7 +827,7 @@ body {
   }
 
   .fondo2-farmaco {
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
   }
 
