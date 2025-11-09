@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 * {
   margin: 0;
@@ -36,6 +36,7 @@ body {
   font-size: 24px;
   font-weight: 800;
   color: black;
+  text-decoration: none;
 }
 
 .header nav {
@@ -52,11 +53,16 @@ body {
   padding: 0;
 }
 
-.header a {
+.header nav ul li a {
+  font-family: "Zalando Sans SemiExpanded";
   color: #fff;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
+}
+
+.header nav ul li a:hover {
+  font-size: 20px;
 }
 
 .inicio {
@@ -250,15 +256,12 @@ body {
   padding-right: 150px;
 }
 
-.fondo1-farmaco h2 {
-  font-weight: 800;
-  font-size: 40px;
-}
-
 .fondo1-farmaco p {
-  font-weight: 500;
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 600;
   width: 60vh;
-  font-size: 25px;
+  font-size: 40px;
+  color: black;
 }
 
 .fondo2-farmaco {
@@ -271,30 +274,60 @@ body {
   height: 100vh;
 }
 
+.fondo2-farmaco .carousel-item .carousel-caption h5 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.fondo2-farmaco .carousel-item .carousel-caption p {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 20px;
+  font-weight: 300;
+}
+
 .fondo3-farmaco {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
 
-.fondo3-farmaco div {
-  width: 70%;
-  height: 70%;
-  background-color: rgba(0, 100, 100, 0.150);
-  border-radius: 20px;
+.fondo3-farmaco .formas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: darkgreen;
+  width: 80%;
+  height: 20%;
+  border-radius: 25px;
+  padding: 10px;
 }
 
-.fondo3-farmaco div h2 {
-  padding-top: 100px;
+.fondo3-farmaco .formas img {
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff41;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.fondo3-farmaco .formas h2 {
+  font-family: "Zalando Sans SemiExpanded";
+  text-align: left;
+  font-style: italic;
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.fondo3-farmaco .formas h3 {
+  font-family: "Zalando Sans SemiExpanded";
   text-align: center;
-  font-size: 70px;
-}
-
-.fondo3-farmaco div p {
-  padding-top: 100px;
-  padding-left: 100px;
   font-size: 30px;
+  color: #fff;
 }
 
 .fondo4-farmaco {
@@ -359,41 +392,49 @@ body {
 }
 
 .absorcion h2 {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 800;
   font-size: 40px;
 }
 
 .distribucion h2 {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 800;
   font-size: 40px;
 }
 
 .metabolismo h2 {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 800;
   font-size: 40px;
 }
 
 .excrecion h2 {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 800;
   font-size: 40px;
 }
 
 .absorcion p {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 25px;
 }
 
 .distribucion p {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 25px;
 }
 
 .metabolismo p {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 25px;
 }
 
 .excrecion p {
+  font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 25px;
 }
@@ -471,10 +512,13 @@ body {
 }
 
 .suple2 {
-  height: 80vh;
+  height: 50vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: darkgreen;
+  border-radius: 25px;
+  margin: 30px;
 }
 
 .suple2 div {
@@ -484,63 +528,75 @@ body {
 }
 
 .suple2 div h2 {
-  font-size: 50px;
+  font-family: "Zalando Sans SemiExpanded";
+  font-style: italic;
+  color: #fff;
+  font-weight: 800;
+  font-size: 55px;
 }
 
-.suple2 div p {
-  font-size: 20px;
+.suple2 div ul li {
+  text-decoration: none;
+  font-family: "Zalando Sans SemiExpanded";
+  color: #fff;
+  font-weight: 100;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.suple2 img {
+  width: 25%;
+  height: 100%;
 }
 
 .suple3 {
-  height: 88vh;
-  display: grid;
-  justify-items: center;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  padding: 100px 70px;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas:
-    "z x x"
-    "z x x"
-    "y y y"
-  ;
 }
 
 .suple3 .div {
   display: flex;
-  justify-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
+  width: 25%;
+  height: 90%;
+  padding: 20px;
+}
+
+.suple3 .div img {
+  background-color: rgba(169, 169, 169, 0.267);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 .suple3 .div p {
+  font-family: "Zalando Sans SemiExpanded";
   text-align: center;
   font-size: 30px;
-  font-weight: 600;
-  padding: 25px;
+  font-weight: 200;
 }
 
-.suple3 .x {
-  background-color: rgba(43, 153, 21, 0.205);
-  grid-area: x;
-}
-
-.suple3 .y {
-  background-color: rgba(43, 153, 21, 0.205);
-  grid-area: y;
-}
-
-.suple3 .z {
-  background-color: rgba(43, 153, 21, 0.205);
-  grid-area: z;
-}
 
 /*FIN SUPLEMENTOS*/
 
 /*TIENDA*/
+.dossolo h2 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 60px;
+  font-weight: 800;
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+  padding-right: 150px;
+  padding-top: 50px;
+  color: black;
+}
+
 .unosolo {
   height: 78vh;
   display: flex;
@@ -549,10 +605,40 @@ body {
 }
 
 .unosolo .card {
-  border: solid 1px darkgreen;
+  border: none;
+}
+
+.unosolo .card img {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 128, 0, 0.445);
+}
+
+.unosolo .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unosolo .card .card-body h2 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 40px;
+  text-align: center;
+}
+
+.unosolo .card .card-body p {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
 }
 
 .unosolo .card .card-body .btn {
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 400;
+  font-size: 20px;
+  width: 50%;
   border: none;
   background-color: darkgreen;
 }
@@ -562,48 +648,82 @@ body {
 /*CONTACTO*/
 .contacto {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 78vh;
 }
 
-.contacto form {
+.contacto .div2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  background-color: #5eb62f;
+  border-radius: 25px;
+}
+
+.contacto .div2 .sugerencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.contacto .div2 .sugerencia h2 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.contacto .div2 .sugerencia h3 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.contacto .div2 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
 }
 
-.contacto form label {
-  font-size: 18px;
-  font-weight: 800;
-  padding-top: 20px;
+.contacto .div2 form label {
+  font-family: "Zalando Sans SemiExpanded";
+  font-size: 30px;
+  font-weight: 100;
   padding-bottom: 5px;
 }
 
-.contacto form input {
+.contacto .div2 form textarea {
+  font-family: "Zalando Sans SemiExpanded";
   width: 300px;
-  height: 35px;
-  border: solid 0, 5px black;
+  height: 45px;
+  background-color: #a4da88;
+  border-radius: 10px;
+  border: none;
 }
 
-.contacto form textarea {
-  width: 300px;
-  height: 35px;
-  border-radius: 5px;
+.contacto .div2 div {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
 }
 
-.contacto form a {
-  padding-top: 20px;
-  padding-left: 70px;
+.contacto .div2 div a {
+  padding-left: 15px;
 }
 
-.contacto form a button {
+.contacto .div2 div a button {
   font-size: 20px;
 }
 
-.contacto form .fin {
+.contacto .div2 div .fin {
+  background-color: rgb(0, 93, 100);
   width: 150px;
+  border-radius: 10px;
 }
 
 /*FIN CONTACTO*/
@@ -649,7 +769,11 @@ body {
   }
 
   .header ul li a {
-    font-size: 11px;
+    font-size: 8px;
+  }
+
+  .header ul li a:hover {
+    font-size: 10px;
   }
 
   .inicio {
@@ -802,7 +926,7 @@ body {
   .fondo1-farmaco {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -811,16 +935,8 @@ body {
     padding: 10px;
   }
 
-  .fondo1-farmaco h2 {
-    text-align: center;
-    font-weight: 900;
-    font-size: 45px;
-    width: 100%;
-    margin: 0;
-  }
-
   .fondo1-farmaco p {
-    text-align: center;
+    padding-top: 50px;
     font-size: 20px;
     width: 100%;
     margin: 0;
@@ -857,7 +973,7 @@ body {
   .fondo3-farmaco div h2 {
     padding-top: 0px;
     text-align: center;
-    font-size: 27px;
+    font-size: 25px;
   }
 
   .fondo3-farmaco div p {
@@ -961,4 +1077,80 @@ body {
     font-size: 15px;
     margin: 0;
   }
+
+  /*SUPLEMENTOS*/
+  .suple1 {
+    padding: 20px 20px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "a a"
+      "a a"
+      "b d"
+      "c d"
+      "e e"
+      "f f"
+    ;
+  }
+
+  .suple1 .item {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .suple2 {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .suple2 div h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .suple2 div p {
+    text-align: center;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 12px;
+  }
+
+  .suple2 img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .suple3 {
+    padding: 20px 20px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "z z"
+      "x x"
+      "x x"
+      "y y"
+    ;
+  }
+
+  .suple3 .div {
+    border: solid green 2px;
+    border-radius: 10px;
+  }
+
+  .suple3 .div p {
+    font-family: "Zalando Sans SemiExpanded";
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 25px;
+  }
+
+  /*FIN SUPLEMENTOS*/
 }
