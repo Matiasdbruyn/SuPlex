@@ -1,0 +1,206 @@
+@use "variables" as v;
+
+.suple1 {
+    height: 90vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 100px 70px;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "a a b d e e"
+        "a a c d f f"
+    ;
+
+    .item {
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+    .a {
+        background-image: url(../img/colageno.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: a;
+    }
+
+    .b {
+        background-image: url(../img/curcumina.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: b;
+    }
+
+    .c {
+        background-image: url(../img/probioticos.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: c;
+    }
+
+    .d {
+        background-image: url(../img/te-ver-matcha.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: d;
+    }
+
+    .e {
+        background-image: url(../img/suple-o3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: e;
+    }
+
+    .f {
+        background-image: url(../img/espirulina.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: f;
+    }
+
+    @include v.celular {
+        padding: 20px 20px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "a a"
+            "a a"
+            "b d"
+            "c d"
+            "e e"
+            "f f"
+        ;
+
+        .item {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.suple2 {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: v.$boton-color;
+    border-radius: 25px;
+    margin: 30px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h2 {
+            font-family: v.$fuente-z;
+            font-style: italic;
+            color: v.$background-total;
+            font-weight: 800;
+            font-size: 55px;
+        }
+
+        ul {
+            li {
+                text-decoration: none;
+                font-family: v.$fuente-z;
+                color: v.$background-total;
+                font-weight: 100;
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
+    }
+
+    img {
+        width: 25%;
+        height: 100%;
+    }
+
+    @include v.celular {
+        @include v.display(column, space-evenly, center);
+
+        div {
+            h2 {
+                text-align: center;
+                font-weight: 800;
+                font-size: 20px;
+            }
+
+            ul {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        img {
+            width: 60%;
+            height: 40%;
+        }
+    }
+}
+
+.suple3 {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 25%;
+        height: 90%;
+        padding: 20px;
+
+        img {
+            background-color: rgba(169, 169, 169, 0.267);
+            border-radius: 20px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            font-family: v.$fuente-z;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 200;
+        }
+    }
+
+    @include v.celular {
+        @include v.display(column, space-around, center);
+
+        .div {
+            width: 90%;
+            height: 60%;
+            padding: 10px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+            }
+        }
+    }
+}

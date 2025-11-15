@@ -1,0 +1,77 @@
+@use "variables" as v;
+
+.header {
+    @include v.display(none, space-around, center);
+    padding: 0px 60px;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: v.$background-total;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 800;
+        color: black;
+        text-decoration: none;
+    }
+
+    nav {
+        background-color: v.$background-suave;
+        border-radius: 50px;
+        padding: 10px 40px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+
+            li {
+                font-family: v.$fuente-z;
+                color: v.$background-total;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 500;
+
+                a {
+                    font-family: v.$fuente-z;
+                    color: v.$background-total;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    @include v.celular {
+        @include v.display(column, space-evenly, center);
+        padding: 0px 20px;
+
+        .logo {
+            font-size: 20px;
+        }
+
+        nav {
+            padding: 0px 0px;
+            width: 100%;
+            border-radius: 12px;
+
+            ul {
+                gap: 5px;
+                justify-content: space-evenly;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                li {
+                    padding-bottom: 5px;
+
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

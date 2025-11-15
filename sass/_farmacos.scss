@@ -1,0 +1,371 @@
+@use "variables" as v;
+
+.fondo1-farmaco {
+    @include v.display(column, space-evenly, end);
+    background-image: linear-gradient(#ffffff, #ffffff00), url("../img/pastis-azules.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center left;
+    height: 90vh;
+    padding-right: 150px;
+
+    h2 {
+        font-family: v.$fuente-z;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 50px;
+    }
+
+    p {
+        font-family: v.$fuente-z;
+        text-align: center;
+        font-weight: 100;
+        width: 60vh;
+        font-size: 40px;
+    }
+
+    @include v.celular {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-right: 0px;
+        padding: 10px;
+
+        h2{
+            padding-top: 25px;
+            font-size: 25px;
+            text-align: center;
+            margin: 0;
+        }
+
+        p {
+            padding-top: 20px;
+            width: 90%;
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+}
+
+.fondo2-farmaco {
+    height: 100vh;
+    overflow: hidden;
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                .w-100 {
+                    width: 100vh;
+                    height: 100vh;
+                }
+
+                .carousel-caption {
+                    h5 {
+                        font-family: v.$fuente-z;
+                        font-size: 30px;
+                        font-weight: 800;
+                    }
+
+                    p {
+                        font-family: v.$fuente-z;
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+
+    @include v.celular {
+        height: 50vh;
+        overflow: hidden;
+
+        .carousel {
+            @include v.display(column, center, center);
+            width: 100%;
+            height: 100%;
+
+            .carousel-inner {
+                .carousel-item {
+                    .w-100 {
+                        height: 50%;
+                    }
+
+                    .carousel-caption {
+                        h5 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fondo3-farmaco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+
+    .formas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: v.$boton-color;
+        width: 80%;
+        height: 20%;
+        border-radius: 25px;
+        padding: 10px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            background-color: #ffffff41;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        div {
+            h2 {
+                font-family: v.$fuente-z;
+                text-align: left;
+                font-style: italic;
+                font-size: 50px;
+                font-weight: 800;
+                padding-bottom: 10px;
+                color: #fff;
+            }
+
+            h3 {
+                font-family: v.$fuente-z;
+                text-align: center;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        @include v.celular {
+            @include v.display(column, space-evenly, center);
+            width: 80%;
+            height: 40%;
+            padding: 10px;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            div {
+                h2 {
+                    font-style: italic;
+                    font-size: 25px;
+                    text-align: center;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.fondo4-farmaco {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 60px;
+    height: 88vh;
+
+    .absorcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/absorcion.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        color: v.$background-total;
+
+        h2 {
+            font-family: v.$fuente-z;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: v.$fuente-z;
+            font-weight: 500;
+            font-size: 25px;
+        }
+    }
+
+    .distribucion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/distribucion.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        color: v.$background-total;
+
+        h2 {
+            font-family: v.$fuente-z;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: v.$fuente-z;
+            font-weight: 500;
+            font-size: 25px;
+        }
+    }
+
+    .metabolismo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/metabolizmo.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        color: v.$background-total;
+
+        h2 {
+            font-family: v.$fuente-z;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: v.$fuente-z;
+            font-weight: 500;
+            font-size: 25px;
+        }
+    }
+
+    .excrecion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/excresion.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        color: v.$background-total;
+
+        h2 {
+            font-family: v.$fuente-z;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        p {
+            font-family: v.$fuente-z;
+            font-weight: 500;
+            font-size: 25px;
+        }
+    }
+
+    @include v.celular {
+        @include v.display(column, space-evenly, center);
+        padding: 10px;
+
+        .absorcion {
+            @include v.display(column, space-around, center);
+            padding: 20px;
+            width: 100%;
+            color: #fff;
+
+            h2 {
+                font-weight: 800;
+                font-size: 25px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+
+        .distribucion {
+            @include v.display(column, space-around, center);
+            padding: 20px;
+            width: 100%;
+            color: #fff;
+
+            h2 {
+                font-weight: 800;
+                font-size: 25px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+
+        .metabolismo {
+            @include v.display(column, space-around, center);
+            padding: 20px;
+            width: 100%;
+            color: #fff;
+
+            h2 {
+                font-weight: 800;
+                font-size: 25px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+
+        .excrecion {
+            @include v.display(column, space-around, center);
+            padding: 20px;
+            width: 100%;
+            color: #fff;
+
+            h2 {
+                font-weight: 800;
+                font-size: 25px;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 15px;
+                margin: 0;
+            }
+        }
+    }
+}

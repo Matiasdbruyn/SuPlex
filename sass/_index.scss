@@ -1,0 +1,379 @@
+@use "variables" as v;
+
+.inicio {
+    @include v.display(none, space-around, center);
+    padding: 80px 60px;
+    height: 90vh;
+
+    .texto-inicio {
+        h1 {
+            font-size: 70px;
+            font-weight: 900;
+            color: black;
+        }
+
+        p {
+            color: black;
+            font-size: 20px;
+        }
+    }
+
+    @include v.celular {
+        @include v.display (column, space-around, center);
+        padding: 0px 30px;
+        height: 90vh;
+
+        .texto-inicio {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .inicio-img {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 60px;
+    height: 60vh;
+
+    .producto1 {
+        @include v.display(column, end, stretch);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/levadura-fondo.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+
+        .boton-productos {
+            background: none;
+            border: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .texto-productos {
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+    .producto2 {
+        @include v.display(column, end, stretch);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/colageno-fondo.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+
+        .boton-productos {
+            background: none;
+            border: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .texto-productos {
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+    .producto3 {
+        @include v.display(column, end, stretch);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/vitamina-d-fondo.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+
+        .boton-productos {
+            background: none;
+            border: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .texto-productos {
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+    .producto4 {
+        @include v.display(column, end, stretch);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/probiotico-fondo.jpg);
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+
+        .boton-productos {
+            background: none;
+            border: none;
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .texto-productos {
+            color: #fff;
+            font-weight: 900;
+        }
+    }
+
+    @include v.celular {
+        @include v.display (column, center, center);
+        padding: 10px;
+
+        .producto1 {
+            height: 100px;
+            padding: 10px;
+            width: 100%;
+
+            .boton-productos {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .texto-productos {
+                margin: 0;
+            }
+        }
+
+        .producto2 {
+            height: 100px;
+            padding: 10px;
+            width: 100%;
+            background-position: center 40%;
+
+            .boton-productos {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .texto-productos {
+                margin: 0;
+            }
+        }
+
+        .producto3 {
+            height: 100px;
+            padding: 10px;
+            width: 100%;
+            background-position: center 50%;
+
+            .boton-productos {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .texto-productos {
+                margin: 0;
+            }
+        }
+
+        .producto4 {
+            height: 100px;
+            padding: 10px;
+            width: 100%;
+            background-position: center 55%;
+
+            .boton-productos {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .texto-productos {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.contenido-capsula {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75vh;
+    padding: 60px 40px;
+
+    .izquierda {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: black;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 800;
+        }
+    }
+
+    .derecha {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: black;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 800;
+        }
+    }
+
+    @include v.celular {
+        @include v.display(column, space-evenly, center);
+        padding: 30px 0px;
+        height: 90vh;
+
+        .izquierda {
+            div {
+                h2 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 8px;
+                    text-align: center;
+                    margin: 0;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .derecha {
+            div {
+                h2 {
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 8px;
+                    text-align: center;
+                    margin: 0;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.fotter-tienda {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background: v.$background-suave;
+    border-radius: 20px;
+    margin: 0px 40px;
+    height: 20vh;
+    position: relative;
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h2 {
+            color: v.$background-total;
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+
+        a {
+            .botones {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+        }
+    }
+
+    div {
+        img {
+            position: absolute;
+            right: -40px;
+            bottom: -110px;
+            width: 500px;
+        }
+    }
+
+    @include v.celular {
+        margin: 0px 10px;
+        height: 10vh;
+        position: relative;
+        justify-content: start;
+        padding: 0px 20px;
+
+        .texto {
+            @include v.display(column, center, start);
+
+            h2 {
+                font-size: 13px;
+                width: 200px;
+            }
+
+            a {
+                .botofin {
+                    padding: 5px 0px;
+                    font-size: 10px;
+                    width: 80px;
+                }
+            }
+        }
+
+        div {
+            img {
+                position: absolute;
+                right: -10px;
+                bottom: -20px;
+                width: 140px;
+            }
+        }
+    }
+
+}

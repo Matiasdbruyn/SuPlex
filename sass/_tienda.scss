@@ -1,0 +1,107 @@
+@use "variables" as v;
+
+.dossolo {
+    h2 {
+        font-family: v.$fuente-z;
+        font-size: 60px;
+        font-weight: 800;
+        font-style: italic;
+        text-align: right;
+        margin: 0;
+        padding-right: 150px;
+        padding-top: 50px;
+        color: black;
+
+        @include v.celular {
+            font-size: 30px;
+            text-align: right;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.unosolo {
+    height: 78vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .card {
+        border: none;
+
+        img {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 128, 0, 0.445);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-family: v.$fuente-z;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            p {
+                font-family: v.$fuente-z;
+                font-size: 15px;
+                font-weight: 100;
+                text-align: center;
+            }
+
+            .btn {
+                font-family: v.$fuente-z;
+                font-weight: 400;
+                font-size: 20px;
+                width: 50%;
+                border: none;
+                background-color: v.$boton-color;
+            }
+        }
+    }
+
+    @include v.celular {
+        @include v.display(column, space-between, center);
+        height: 150vh;
+
+        .card {
+            align-items: center;
+
+            img {
+                width: 40%;
+                height: 42%;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .card-body {
+                @include v.display(column, space-around, center);
+                padding: 5px;
+
+                h2 {
+                    font-size: 28px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    padding: 10px;
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                .btn {
+                    font-size: 15px;
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

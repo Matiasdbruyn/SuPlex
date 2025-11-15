@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+$fuente-m: 'Montserrat';
+$fuente-z: "Zalando Sans SemiExpanded";
+$boton-color: darkgreen;
+$background-total: #fff;
+$background-suave: #6BB543;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+.botones {
+  background-color: $boton-color;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// MIXINS
+
+@mixin display($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// MIXINS RESPONSIVE
+
+@mixin celular{
+  @media (min-width: 320px) and (max-width: 430px){
+    @content;
+  }
+}
+
+// EXTENDS
