@@ -8,10 +8,10 @@ $background-total: #fff;
 $background-suave: #6BB543;
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 
 // MIXINS
 
-@mixin display($direction, $justify, $align){
+@mixin display($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
@@ -40,10 +40,32 @@ body {
 
 // MIXINS RESPONSIVE
 
-@mixin celular{
-  @media (min-width: 320px) and (max-width: 430px){
+@mixin celular {
+  @media (min-width: 320px) and (max-width: 430px) {
     @content;
   }
 }
 
 // EXTENDS
+
+%cinetica {
+  @include display(column, space-around, none);
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  color: $background-total;
+
+  h2 {
+    font-family: "Zalando Sans SemiExpanded";
+    font-weight: 800;
+    font-size: 40px;
+  }
+
+  p {
+    font-family: "Zalando Sans SemiExpanded";
+    font-weight: 500;
+    font-size: 25px;
+  }
+}

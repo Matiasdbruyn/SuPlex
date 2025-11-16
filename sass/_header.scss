@@ -28,19 +28,22 @@
             padding: 0;
 
             li {
-                font-family: v.$fuente-z;
-                color: v.$background-total;
                 text-decoration: none;
                 font-size: 18px;
                 font-weight: 500;
+                transition-duration: 0.5s;
 
                 a {
                     font-family: v.$fuente-z;
-                    color: v.$background-total;
+                    color: #ffffffdc;
                     text-decoration: none;
                     font-size: 16px;
                     font-weight: 500;
+                    transition-duration: 0.5s;
                 }
+            }:hover {
+                transform: scale(1.2);
+                color: v.$background-total;
             }
         }
     }

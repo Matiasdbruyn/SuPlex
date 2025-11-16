@@ -35,7 +35,7 @@
         padding-right: 0px;
         padding: 10px;
 
-        h2{
+        h2 {
             padding-top: 25px;
             font-size: 25px;
             text-align: center;
@@ -188,104 +188,23 @@
     height: 88vh;
 
     .absorcion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @extend %cinetica;
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/absorcion.jpg);
-        background-size: cover;
-        border-radius: 15px;
-        text-align: center;
-        padding: 20px;
-        width: 400px;
-        color: v.$background-total;
-
-        h2 {
-            font-family: v.$fuente-z;
-            font-weight: 800;
-            font-size: 40px;
-        }
-
-        p {
-            font-family: v.$fuente-z;
-            font-weight: 500;
-            font-size: 25px;
-        }
     }
 
     .distribucion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @extend %cinetica;
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/distribucion.jpg);
-        background-size: cover;
-        border-radius: 15px;
-        text-align: center;
-        padding: 20px;
-        width: 400px;
-        color: v.$background-total;
-
-        h2 {
-            font-family: v.$fuente-z;
-            font-weight: 800;
-            font-size: 40px;
-        }
-
-        p {
-            font-family: v.$fuente-z;
-            font-weight: 500;
-            font-size: 25px;
-        }
     }
 
     .metabolismo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @extend %cinetica;
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/metabolizmo.jpg);
-        background-size: cover;
-        border-radius: 15px;
-        text-align: center;
-        padding: 20px;
-        width: 400px;
-        color: v.$background-total;
-
-        h2 {
-            font-family: v.$fuente-z;
-            font-weight: 800;
-            font-size: 40px;
-        }
-
-        p {
-            font-family: v.$fuente-z;
-            font-weight: 500;
-            font-size: 25px;
-        }
     }
 
     .excrecion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @extend %cinetica;
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/excresion.jpg);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        text-align: center;
-        padding: 20px;
-        width: 400px;
-        color: v.$background-total;
-
-        h2 {
-            font-family: v.$fuente-z;
-            font-weight: 800;
-            font-size: 40px;
-        }
-
-        p {
-            font-family: v.$fuente-z;
-            font-weight: 500;
-            font-size: 25px;
-        }
     }
 
     @include v.celular {

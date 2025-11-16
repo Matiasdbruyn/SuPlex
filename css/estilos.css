@@ -21,6 +21,29 @@ body {
   cursor: pointer;
 }
 
+.fondo4-farmaco .absorcion, .fondo4-farmaco .distribucion, .fondo4-farmaco .metabolismo, .fondo4-farmaco .excrecion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: none;
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  width: 400px;
+  color: #fff;
+}
+.fondo4-farmaco .absorcion h2, .fondo4-farmaco .distribucion h2, .fondo4-farmaco .metabolismo h2, .fondo4-farmaco .excrecion h2 {
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 800;
+  font-size: 40px;
+}
+.fondo4-farmaco .absorcion p, .fondo4-farmaco .distribucion p, .fondo4-farmaco .metabolismo p, .fondo4-farmaco .excrecion p {
+  font-family: "Zalando Sans SemiExpanded";
+  font-weight: 500;
+  font-size: 25px;
+}
+
 .header {
   display: flex;
   flex-direction: none;
@@ -51,18 +74,22 @@ body {
   padding: 0;
 }
 .header nav ul li {
-  font-family: "Zalando Sans SemiExpanded";
-  color: #fff;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
+  transition-duration: 0.5s;
 }
 .header nav ul li a {
   font-family: "Zalando Sans SemiExpanded";
-  color: #fff;
+  color: rgba(255, 255, 255, 0.862745098);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
+  transition-duration: 0.5s;
+}
+.header nav ul :hover {
+  transform: scale(1.2);
+  color: #fff;
 }
 @media (min-width: 320px) and (max-width: 430px) {
   .header {
@@ -155,7 +182,7 @@ body {
   background: none;
   border: none;
 }
-.productos .producto1 .boton-productos img {
+.productos .producto1 .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
@@ -179,7 +206,7 @@ body {
   background: none;
   border: none;
 }
-.productos .producto2 .boton-productos img {
+.productos .producto2 .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
@@ -203,7 +230,7 @@ body {
   background: none;
   border: none;
 }
-.productos .producto3 .boton-productos img {
+.productos .producto3 .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
@@ -227,7 +254,7 @@ body {
   background: none;
   border: none;
 }
-.productos .producto4 .boton-productos img {
+.productos .producto4 .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
@@ -248,7 +275,7 @@ body {
     padding: 10px;
     width: 100%;
   }
-  .productos .producto1 .boton-productos img {
+  .productos .producto1 .boton-productos .botonv {
     width: 40px;
     height: 40px;
   }
@@ -261,7 +288,7 @@ body {
     width: 100%;
     background-position: center 40%;
   }
-  .productos .producto2 .boton-productos img {
+  .productos .producto2 .boton-productos .botonv {
     width: 40px;
     height: 40px;
   }
@@ -274,7 +301,7 @@ body {
     width: 100%;
     background-position: center 50%;
   }
-  .productos .producto3 .boton-productos img {
+  .productos .producto3 .boton-productos .botonv {
     width: 40px;
     height: 40px;
   }
@@ -287,7 +314,7 @@ body {
     width: 100%;
     background-position: center 55%;
   }
-  .productos .producto4 .boton-productos img {
+  .productos .producto4 .boton-productos .botonv {
     width: 40px;
     height: 40px;
   }
@@ -585,93 +612,16 @@ body {
   height: 88vh;
 }
 .fondo4-farmaco .absorcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/absorcion.jpg);
-  background-size: cover;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  width: 400px;
-  color: #fff;
-}
-.fondo4-farmaco .absorcion h2 {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 800;
-  font-size: 40px;
-}
-.fondo4-farmaco .absorcion p {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 500;
-  font-size: 25px;
 }
 .fondo4-farmaco .distribucion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/distribucion.jpg);
-  background-size: cover;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  width: 400px;
-  color: #fff;
-}
-.fondo4-farmaco .distribucion h2 {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 800;
-  font-size: 40px;
-}
-.fondo4-farmaco .distribucion p {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 500;
-  font-size: 25px;
 }
 .fondo4-farmaco .metabolismo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/metabolizmo.jpg);
-  background-size: cover;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  width: 400px;
-  color: #fff;
-}
-.fondo4-farmaco .metabolismo h2 {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 800;
-  font-size: 40px;
-}
-.fondo4-farmaco .metabolismo p {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 500;
-  font-size: 25px;
 }
 .fondo4-farmaco .excrecion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/excresion.jpg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px;
-  width: 400px;
-  color: #fff;
-}
-.fondo4-farmaco .excrecion h2 {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 800;
-  font-size: 40px;
-}
-.fondo4-farmaco .excrecion p {
-  font-family: "Zalando Sans SemiExpanded";
-  font-weight: 500;
-  font-size: 25px;
 }
 @media (min-width: 320px) and (max-width: 430px) {
   .fondo4-farmaco {
