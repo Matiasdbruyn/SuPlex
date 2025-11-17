@@ -40,6 +40,12 @@ body {
 
 // MIXINS RESPONSIVE
 
+@mixin tablet {
+  @media (min-width: 431px) and (max-width: 800px) {
+    @content;
+  }
+}
+
 @mixin celular {
   @media (min-width: 320px) and (max-width: 430px) {
     @content;
@@ -49,7 +55,7 @@ body {
 // EXTENDS
 
 %cinetica {
-  @include display(column, space-around, none);
+  @include display(column, space-between, none);
   background-size: cover;
   border-radius: 15px;
   text-align: center;
@@ -58,12 +64,15 @@ body {
   color: $background-total;
 
   h2 {
+    padding-top: 20px;
     font-family: "Zalando Sans SemiExpanded";
     font-weight: 800;
+    font-style: italic;
     font-size: 40px;
   }
 
   p {
+    padding-bottom: 20px;
     font-family: "Zalando Sans SemiExpanded";
     font-weight: 500;
     font-size: 25px;

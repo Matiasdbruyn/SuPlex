@@ -51,21 +51,29 @@
     height: 60vh;
 
     .producto1 {
-        @include v.display(column, end, stretch);
+        @include v.display(column, end, center);
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/levadura-fondo.jpg);
         background-size: cover;
         border-radius: 15px;
         text-align: center;
         padding: 20px;
         width: 400px;
+        position: relative;
 
-        .boton-productos {
-            background: none;
-            border: none;
+        a {
+            position: absolute;
+            opacity: 0;
+            padding-bottom: 55px;
+            transition-duration: 0.2s;
 
-            .botonv {
-                width: 50px;
-                height: 50px;
+            .boton-productos {
+                background: none;
+                border: none;
+
+                .botonv {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
 
@@ -75,22 +83,34 @@
         }
     }
 
+    :hover a {
+        opacity: 1;
+    }
+
     .producto2 {
-        @include v.display(column, end, stretch);
+        @include v.display(column, end, center);
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/colageno-fondo.jpg);
         background-size: cover;
         border-radius: 15px;
         text-align: center;
         padding: 20px;
         width: 400px;
+        position: relative;
 
-        .boton-productos {
-            background: none;
-            border: none;
+        a {
+            position: absolute;
+            opacity: 0;
+            padding-bottom: 55px;
+            transition-duration: 0.2s;
 
-            .botonv {
-                width: 50px;
-                height: 50px;
+            .boton-productos {
+                background: none;
+                border: none;
+
+                .botonv {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
 
@@ -100,22 +120,34 @@
         }
     }
 
+    :hover a {
+        opacity: 1;
+    }
+
     .producto3 {
-        @include v.display(column, end, stretch);
+        @include v.display(column, end, center);
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/vitamina-d-fondo.jpg);
         background-size: cover;
         border-radius: 15px;
         text-align: center;
         padding: 20px;
         width: 400px;
+        position: relative;
 
-        .boton-productos {
-            background: none;
-            border: none;
+        a {
+            position: absolute;
+            opacity: 0;
+            padding-bottom: 55px;
+            transition-duration: 0.2s;
 
-            .botonv {
-                width: 50px;
-                height: 50px;
+            .boton-productos {
+                background: none;
+                border: none;
+
+                .botonv {
+                    width: 50px;
+                    height: 50px;
+                }
             }
         }
 
@@ -125,30 +157,45 @@
         }
     }
 
+    :hover a {
+        opacity: 1;
+    }
+
     .producto4 {
-        @include v.display(column, end, stretch);
+        @include v.display(column, end, center);
         background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/probiotico-fondo.jpg);
         background-size: cover;
         border-radius: 15px;
         text-align: center;
         padding: 20px;
         width: 400px;
+        position: relative;
 
-        .boton-productos {
-            background: none;
-            border: none;
+        a {
+            position: absolute;
+            opacity: 0;
+            padding-bottom: 55px;
+            transition-duration: 0.2s;
 
-            .botonv {
-                width: 50px;
-                height: 50px;
+            .boton-productos {
+                background: none;
+                border: none;
+
+                .botonv {
+                    width: 50px;
+                    height: 50px;
+                }
             }
-
         }
 
         .texto-productos {
             color: #fff;
             font-weight: 900;
         }
+    }
+
+    :hover a {
+        opacity: 1;
     }
 
     @include v.celular {
@@ -160,10 +207,13 @@
             padding: 10px;
             width: 100%;
 
-            .boton-productos {
-                .botonv {
-                    width: 40px;
-                    height: 40px;
+            a {
+                padding-bottom: 35px;
+                .boton-productos {
+                    .botonv {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
 
@@ -178,10 +228,13 @@
             width: 100%;
             background-position: center 40%;
 
-            .boton-productos {
-                .botonv {
-                    width: 40px;
-                    height: 40px;
+            a {
+                padding-bottom: 35px;
+                .boton-productos {
+                    .botonv {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
 
@@ -196,10 +249,13 @@
             width: 100%;
             background-position: center 50%;
 
-            .boton-productos {
-                .botonv {
-                    width: 40px;
-                    height: 40px;
+            a {
+                padding-bottom: 35px;
+                .boton-productos {
+                    .botonv {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
 
@@ -214,10 +270,13 @@
             width: 100%;
             background-position: center 55%;
 
-            .boton-productos {
-                .botonv {
-                    width: 40px;
-                    height: 40px;
+            a {
+                padding-bottom: 35px;
+                .boton-productos {
+                    .botonv {
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
             }
 

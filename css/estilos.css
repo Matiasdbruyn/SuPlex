@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +22,13 @@ body {
   cursor: pointer;
 }
 
-.fondo4-farmaco .absorcion, .fondo4-farmaco .distribucion, .fondo4-farmaco .metabolismo, .fondo4-farmaco .excrecion {
+.fondo4-farmaco .absorcion,
+.fondo4-farmaco .distribucion,
+.fondo4-farmaco .metabolismo,
+.fondo4-farmaco .excrecion {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: none;
   background-size: cover;
   border-radius: 15px;
@@ -33,12 +37,23 @@ body {
   width: 400px;
   color: #fff;
 }
-.fondo4-farmaco .absorcion h2, .fondo4-farmaco .distribucion h2, .fondo4-farmaco .metabolismo h2, .fondo4-farmaco .excrecion h2 {
+
+.fondo4-farmaco .absorcion h2,
+.fondo4-farmaco .distribucion h2,
+.fondo4-farmaco .metabolismo h2,
+.fondo4-farmaco .excrecion h2 {
+  padding-top: 20px;
   font-family: "Zalando Sans SemiExpanded";
   font-weight: 800;
+  font-style: italic;
   font-size: 40px;
 }
-.fondo4-farmaco .absorcion p, .fondo4-farmaco .distribucion p, .fondo4-farmaco .metabolismo p, .fondo4-farmaco .excrecion p {
+
+.fondo4-farmaco .absorcion p,
+.fondo4-farmaco .distribucion p,
+.fondo4-farmaco .metabolismo p,
+.fondo4-farmaco .excrecion p {
+  padding-bottom: 20px;
   font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 25px;
@@ -54,18 +69,22 @@ body {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 1000;
 }
+
 .header .logo {
   font-size: 24px;
   font-weight: 800;
   color: black;
   text-decoration: none;
 }
+
 .header nav {
   background-color: #6BB543;
   border-radius: 50px;
   padding: 10px 40px;
 }
+
 .header nav ul {
   list-style: none;
   display: flex;
@@ -73,12 +92,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .header nav ul li {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   transition-duration: 0.5s;
 }
+
 .header nav ul li a {
   font-family: "Zalando Sans SemiExpanded";
   color: rgba(255, 255, 255, 0.862745098);
@@ -87,10 +108,12 @@ body {
   font-weight: 500;
   transition-duration: 0.5s;
 }
+
 .header nav ul :hover {
   transform: scale(1.2);
   color: #fff;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .header {
     display: flex;
@@ -99,23 +122,28 @@ body {
     align-items: center;
     padding: 0px 20px;
   }
+
   .header .logo {
     font-size: 20px;
   }
+
   .header nav {
     padding: 0px 0px;
     width: 100%;
     border-radius: 12px;
   }
+
   .header nav ul {
     gap: 5px;
     justify-content: space-evenly;
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .header nav ul li {
     padding-bottom: 5px;
   }
+
   .header nav ul li a {
     font-size: 10px;
   }
@@ -129,15 +157,18 @@ body {
   padding: 80px 60px;
   height: 90vh;
 }
+
 .inicio .texto-inicio h1 {
   font-size: 70px;
   font-weight: 900;
   color: black;
 }
+
 .inicio .texto-inicio p {
   color: black;
   font-size: 20px;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .inicio {
     display: flex;
@@ -147,12 +178,15 @@ body {
     padding: 0px 30px;
     height: 90vh;
   }
+
   .inicio .texto-inicio h1 {
     font-size: 40px;
   }
+
   .inicio .texto-inicio p {
     font-size: 15px;
   }
+
   .inicio .inicio-img img {
     width: 100%;
     height: 100%;
@@ -166,102 +200,167 @@ body {
   padding: 60px;
   height: 60vh;
 }
+
 .productos .producto1 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: stretch;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/levadura-fondo.jpg);
   background-size: cover;
   border-radius: 15px;
   text-align: center;
   padding: 20px;
   width: 400px;
+  position: relative;
 }
-.productos .producto1 .boton-productos {
+
+.productos .producto1 a {
+  position: absolute;
+  opacity: 0;
+  padding-bottom: 55px;
+  transition-duration: 0.2s;
+}
+
+.productos .producto1 a .boton-productos {
   background: none;
   border: none;
 }
-.productos .producto1 .boton-productos .botonv {
+
+.productos .producto1 a .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
+
 .productos .producto1 .texto-productos {
   color: #fff;
   font-weight: 900;
 }
+
+.productos :hover a {
+  opacity: 1;
+}
+
 .productos .producto2 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: stretch;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/colageno-fondo.jpg);
   background-size: cover;
   border-radius: 15px;
   text-align: center;
   padding: 20px;
   width: 400px;
+  position: relative;
 }
-.productos .producto2 .boton-productos {
+
+.productos .producto2 a {
+  position: absolute;
+  opacity: 0;
+  padding-bottom: 55px;
+  transition-duration: 0.2s;
+}
+
+.productos .producto2 a .boton-productos {
   background: none;
   border: none;
 }
-.productos .producto2 .boton-productos .botonv {
+
+.productos .producto2 a .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
+
 .productos .producto2 .texto-productos {
   color: #fff;
   font-weight: 900;
 }
+
+.productos :hover a {
+  opacity: 1;
+}
+
 .productos .producto3 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: stretch;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/vitamina-d-fondo.jpg);
   background-size: cover;
   border-radius: 15px;
   text-align: center;
   padding: 20px;
   width: 400px;
+  position: relative;
 }
-.productos .producto3 .boton-productos {
+
+.productos .producto3 a {
+  position: absolute;
+  opacity: 0;
+  padding-bottom: 55px;
+  transition-duration: 0.2s;
+}
+
+.productos .producto3 a .boton-productos {
   background: none;
   border: none;
 }
-.productos .producto3 .boton-productos .botonv {
+
+.productos .producto3 a .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
+
 .productos .producto3 .texto-productos {
   color: #fff;
   font-weight: 900;
 }
+
+.productos :hover a {
+  opacity: 1;
+}
+
 .productos .producto4 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: stretch;
+  align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/probiotico-fondo.jpg);
   background-size: cover;
   border-radius: 15px;
   text-align: center;
   padding: 20px;
   width: 400px;
+  position: relative;
 }
-.productos .producto4 .boton-productos {
+
+.productos .producto4 a {
+  position: absolute;
+  opacity: 0;
+  padding-bottom: 55px;
+  transition-duration: 0.2s;
+}
+
+.productos .producto4 a .boton-productos {
   background: none;
   border: none;
 }
-.productos .producto4 .boton-productos .botonv {
+
+.productos .producto4 a .boton-productos .botonv {
   width: 50px;
   height: 50px;
 }
+
 .productos .producto4 .texto-productos {
   color: #fff;
   font-weight: 900;
 }
+
+.productos :hover a {
+  opacity: 1;
+}
+
 @media (min-width: 320px) and (max-width: 430px) {
   .productos {
     display: flex;
@@ -270,54 +369,82 @@ body {
     align-items: center;
     padding: 10px;
   }
+
   .productos .producto1 {
     height: 100px;
     padding: 10px;
     width: 100%;
   }
-  .productos .producto1 .boton-productos .botonv {
-    width: 40px;
-    height: 40px;
+
+  .productos .producto1 a {
+    padding-bottom: 35px;
   }
+
+  .productos .producto1 a .boton-productos .botonv {
+    width: 35px;
+    height: 35px;
+  }
+
   .productos .producto1 .texto-productos {
     margin: 0;
   }
+
   .productos .producto2 {
     height: 100px;
     padding: 10px;
     width: 100%;
     background-position: center 40%;
   }
-  .productos .producto2 .boton-productos .botonv {
-    width: 40px;
-    height: 40px;
+
+  .productos .producto2 a {
+    padding-bottom: 35px;
   }
+
+  .productos .producto2 a .boton-productos .botonv {
+    width: 35px;
+    height: 35px;
+  }
+
   .productos .producto2 .texto-productos {
     margin: 0;
   }
+
   .productos .producto3 {
     height: 100px;
     padding: 10px;
     width: 100%;
     background-position: center 50%;
   }
-  .productos .producto3 .boton-productos .botonv {
-    width: 40px;
-    height: 40px;
+
+  .productos .producto3 a {
+    padding-bottom: 35px;
   }
+
+  .productos .producto3 a .boton-productos .botonv {
+    width: 35px;
+    height: 35px;
+  }
+
   .productos .producto3 .texto-productos {
     margin: 0;
   }
+
   .productos .producto4 {
     height: 100px;
     padding: 10px;
     width: 100%;
     background-position: center 55%;
   }
-  .productos .producto4 .boton-productos .botonv {
-    width: 40px;
-    height: 40px;
+
+  .productos .producto4 a {
+    padding-bottom: 35px;
   }
+
+  .productos .producto4 a .boton-productos .botonv {
+    width: 35px;
+    height: 35px;
+  }
+
   .productos .producto4 .texto-productos {
     margin: 0;
   }
@@ -329,26 +456,31 @@ body {
   height: 75vh;
   padding: 60px 40px;
 }
+
 .contenido-capsula .izquierda {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: black;
 }
+
 .contenido-capsula .izquierda h2 {
   font-size: 50px;
   font-weight: 800;
 }
+
 .contenido-capsula .derecha {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   color: black;
 }
+
 .contenido-capsula .derecha h2 {
   font-size: 50px;
   font-weight: 800;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .contenido-capsula {
     display: flex;
@@ -358,26 +490,31 @@ body {
     padding: 30px 0px;
     height: 90vh;
   }
+
   .contenido-capsula .izquierda div h2 {
     font-size: 20px;
     text-align: center;
     margin: 0;
   }
+
   .contenido-capsula .izquierda div p {
     font-size: 8px;
     text-align: center;
     margin: 0;
     padding-bottom: 20px;
   }
+
   .contenido-capsula img {
     width: 300px;
     height: 300px;
   }
+
   .contenido-capsula .derecha div h2 {
     font-size: 20px;
     text-align: center;
     margin: 0;
   }
+
   .contenido-capsula .derecha div p {
     font-size: 8px;
     text-align: center;
@@ -396,27 +533,32 @@ body {
   height: 20vh;
   position: relative;
 }
+
 .fotter-tienda .texto {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .fotter-tienda .texto h2 {
   color: #fff;
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 0;
 }
+
 .fotter-tienda .texto a .botones {
   margin-bottom: 0;
   font-size: 20px;
 }
+
 .fotter-tienda div img {
   position: absolute;
   right: -40px;
   bottom: -110px;
   width: 500px;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fotter-tienda {
     margin: 0px 10px;
@@ -425,21 +567,25 @@ body {
     justify-content: start;
     padding: 0px 20px;
   }
+
   .fotter-tienda .texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
   }
+
   .fotter-tienda .texto h2 {
     font-size: 13px;
     width: 200px;
   }
+
   .fotter-tienda .texto a .botofin {
     padding: 5px 0px;
     font-size: 10px;
     width: 80px;
   }
+
   .fotter-tienda div img {
     position: absolute;
     right: -10px;
@@ -460,12 +606,14 @@ body {
   height: 90vh;
   padding-right: 150px;
 }
+
 .fondo1-farmaco h2 {
   font-family: "Zalando Sans SemiExpanded";
   font-style: italic;
   font-weight: 600;
   font-size: 50px;
 }
+
 .fondo1-farmaco p {
   font-family: "Zalando Sans SemiExpanded";
   text-align: center;
@@ -473,6 +621,7 @@ body {
   width: 60vh;
   font-size: 40px;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fondo1-farmaco {
     display: flex;
@@ -485,12 +634,14 @@ body {
     padding-right: 0px;
     padding: 10px;
   }
+
   .fondo1-farmaco h2 {
     padding-top: 25px;
     font-size: 25px;
     text-align: center;
     margin: 0;
   }
+
   .fondo1-farmaco p {
     padding-top: 20px;
     width: 90%;
@@ -503,25 +654,30 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
 .fondo2-farmaco .carousel .carousel-inner .carousel-item .w-100 {
   width: 100vh;
   height: 100vh;
 }
+
 .fondo2-farmaco .carousel .carousel-inner .carousel-item .carousel-caption h5 {
   font-family: "Zalando Sans SemiExpanded";
   font-size: 30px;
   font-weight: 800;
 }
+
 .fondo2-farmaco .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-family: "Zalando Sans SemiExpanded";
   font-size: 20px;
   font-weight: 300;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fondo2-farmaco {
     height: 50vh;
     overflow: hidden;
   }
+
   .fondo2-farmaco .carousel {
     display: flex;
     flex-direction: column;
@@ -530,14 +686,29 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .fondo2-farmaco .carousel .carousel-inner .carousel-item .w-100 {
     height: 50%;
   }
+
+  .fondo2-farmaco .carousel .carousel-inner .carousel-item .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+  }
+
   .fondo2-farmaco .carousel .carousel-inner .carousel-item .carousel-caption h5 {
     font-size: 20px;
+    margin: 0;
+    width: 90%;
   }
+
   .fondo2-farmaco .carousel .carousel-inner .carousel-item .carousel-caption p {
     font-size: 10px;
+    margin: 0;
+    width: 90%;
   }
 }
 
@@ -548,6 +719,7 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .fondo3-farmaco .formas {
   display: flex;
   justify-content: space-evenly;
@@ -558,6 +730,7 @@ body {
   border-radius: 25px;
   padding: 10px;
 }
+
 .fondo3-farmaco .formas img {
   width: 120px;
   height: 120px;
@@ -565,6 +738,7 @@ body {
   border-radius: 10px;
   padding: 10px;
 }
+
 .fondo3-farmaco .formas div h2 {
   font-family: "Zalando Sans SemiExpanded";
   text-align: left;
@@ -574,12 +748,14 @@ body {
   padding-bottom: 10px;
   color: #fff;
 }
+
 .fondo3-farmaco .formas div h3 {
   font-family: "Zalando Sans SemiExpanded";
   text-align: center;
   font-size: 30px;
   color: #fff;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fondo3-farmaco .formas {
     display: flex;
@@ -590,15 +766,18 @@ body {
     height: 40%;
     padding: 10px;
   }
+
   .fondo3-farmaco .formas img {
     width: 80px;
     height: 80px;
   }
+
   .fondo3-farmaco .formas div h2 {
     font-style: italic;
     font-size: 25px;
     text-align: center;
   }
+
   .fondo3-farmaco .formas div h3 {
     font-size: 20px;
   }
@@ -611,18 +790,23 @@ body {
   padding: 60px;
   height: 88vh;
 }
+
 .fondo4-farmaco .absorcion {
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/absorcion.jpg);
 }
+
 .fondo4-farmaco .distribucion {
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/distribucion.jpg);
 }
+
 .fondo4-farmaco .metabolismo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/metabolizmo.jpg);
 }
+
 .fondo4-farmaco .excrecion {
   background-image: linear-gradient(rgba(0, 0, 0, 0.404)), url(../img/excresion.jpg);
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fondo4-farmaco {
     display: flex;
@@ -631,78 +815,94 @@ body {
     align-items: center;
     padding: 10px;
   }
+
   .fondo4-farmaco .absorcion {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     color: #fff;
   }
+
   .fondo4-farmaco .absorcion h2 {
+    padding-top: 10px;
     font-weight: 800;
     font-size: 25px;
-    padding-bottom: 10px;
   }
+
   .fondo4-farmaco .absorcion p {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 15px;
     margin: 0;
   }
+
   .fondo4-farmaco .distribucion {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     color: #fff;
   }
+
   .fondo4-farmaco .distribucion h2 {
+    padding-top: 10px;
     font-weight: 800;
     font-size: 25px;
-    padding-bottom: 10px;
   }
+
   .fondo4-farmaco .distribucion p {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 15px;
     margin: 0;
   }
+
   .fondo4-farmaco .metabolismo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     color: #fff;
   }
+
   .fondo4-farmaco .metabolismo h2 {
+    padding-top: 10px;
     font-weight: 800;
     font-size: 25px;
-    padding-bottom: 10px;
   }
+
   .fondo4-farmaco .metabolismo p {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 15px;
     margin: 0;
   }
+
   .fondo4-farmaco .excrecion {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     color: #fff;
   }
+
   .fondo4-farmaco .excrecion h2 {
+    padding-top: 10px;
     font-weight: 800;
     font-size: 25px;
-    padding-bottom: 10px;
   }
+
   .fondo4-farmaco .excrecion p {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 15px;
     margin: 0;
@@ -720,11 +920,13 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "a a b d e e" "a a c d f f";
 }
+
 .suple1 .item {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
+
 .suple1 .a {
   background-image: url(../img/colageno.jpg);
   background-position: center;
@@ -732,6 +934,7 @@ body {
   background-size: cover;
   grid-area: a;
 }
+
 .suple1 .b {
   background-image: url(../img/curcumina.jpg);
   background-position: center;
@@ -739,6 +942,7 @@ body {
   background-size: cover;
   grid-area: b;
 }
+
 .suple1 .c {
   background-image: url(../img/probioticos.jpg);
   background-position: center;
@@ -746,6 +950,7 @@ body {
   background-size: cover;
   grid-area: c;
 }
+
 .suple1 .d {
   background-image: url(../img/te-ver-matcha.jpg);
   background-position: center;
@@ -753,6 +958,7 @@ body {
   background-size: cover;
   grid-area: d;
 }
+
 .suple1 .e {
   background-image: url(../img/suple-o3.jpg);
   background-position: center;
@@ -760,6 +966,7 @@ body {
   background-size: cover;
   grid-area: e;
 }
+
 .suple1 .f {
   background-image: url(../img/espirulina.jpg);
   background-position: center;
@@ -767,6 +974,7 @@ body {
   background-size: cover;
   grid-area: f;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .suple1 {
     padding: 20px 20px;
@@ -775,6 +983,7 @@ body {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "a a" "a a" "b d" "c d" "e e" "f f";
   }
+
   .suple1 .item {
     width: 100%;
     height: 100%;
@@ -791,11 +1000,13 @@ body {
   border-radius: 25px;
   margin: 30px;
 }
+
 .suple2 div {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .suple2 div h2 {
   font-family: "Zalando Sans SemiExpanded";
   font-style: italic;
@@ -803,6 +1014,7 @@ body {
   font-weight: 800;
   font-size: 55px;
 }
+
 .suple2 div ul li {
   text-decoration: none;
   font-family: "Zalando Sans SemiExpanded";
@@ -811,10 +1023,12 @@ body {
   font-size: 30px;
   padding: 10px;
 }
+
 .suple2 img {
   width: 25%;
   height: 100%;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .suple2 {
     display: flex;
@@ -822,14 +1036,17 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
+
   .suple2 div h2 {
     text-align: center;
     font-weight: 800;
     font-size: 20px;
   }
+
   .suple2 div ul li {
     font-size: 20px;
   }
+
   .suple2 img {
     width: 60%;
     height: 40%;
@@ -842,6 +1059,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .suple3 .div {
   display: flex;
   flex-direction: column;
@@ -851,6 +1069,7 @@ body {
   height: 90%;
   padding: 20px;
 }
+
 .suple3 .div img {
   background-color: rgba(169, 169, 169, 0.267);
   border-radius: 20px;
@@ -858,12 +1077,14 @@ body {
   width: 100px;
   height: 100px;
 }
+
 .suple3 .div p {
   font-family: "Zalando Sans SemiExpanded";
   text-align: center;
   font-size: 30px;
   font-weight: 200;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .suple3 {
     display: flex;
@@ -871,15 +1092,18 @@ body {
     justify-content: space-around;
     align-items: center;
   }
+
   .suple3 .div {
     width: 90%;
     height: 60%;
     padding: 10px;
   }
+
   .suple3 .div img {
     width: 60px;
     height: 60px;
   }
+
   .suple3 .div p {
     font-size: 15px;
     font-weight: 200;
@@ -897,6 +1121,7 @@ body {
   padding-top: 50px;
   color: black;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .dossolo h2 {
     font-size: 30px;
@@ -913,31 +1138,37 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+
 .unosolo .card {
   border: none;
 }
+
 .unosolo .card img {
   padding: 10px;
   border-radius: 10px;
   background-color: rgba(0, 128, 0, 0.445);
 }
+
 .unosolo .card .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .unosolo .card .card-body h2 {
   font-family: "Zalando Sans SemiExpanded";
   font-size: 40px;
   text-align: center;
 }
+
 .unosolo .card .card-body p {
   font-family: "Zalando Sans SemiExpanded";
   font-size: 15px;
   font-weight: 100;
   text-align: center;
 }
+
 .unosolo .card .card-body .btn {
   font-family: "Zalando Sans SemiExpanded";
   font-weight: 400;
@@ -946,6 +1177,7 @@ body {
   border: none;
   background-color: darkgreen;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .unosolo {
     display: flex;
@@ -954,15 +1186,18 @@ body {
     align-items: center;
     height: 150vh;
   }
+
   .unosolo .card {
     align-items: center;
   }
+
   .unosolo .card img {
     width: 40%;
     height: 42%;
     padding: 5px;
     border-radius: 5px;
   }
+
   .unosolo .card .card-body {
     display: flex;
     flex-direction: column;
@@ -970,16 +1205,19 @@ body {
     align-items: center;
     padding: 5px;
   }
+
   .unosolo .card .card-body h2 {
     font-size: 28px;
     text-align: center;
     margin: 0;
   }
+
   .unosolo .card .card-body p {
     padding: 10px;
     font-size: 12px;
     margin: 0;
   }
+
   .unosolo .card .card-body .btn {
     font-size: 15px;
     width: 35%;
@@ -992,6 +1230,7 @@ body {
   align-items: center;
   height: 78vh;
 }
+
 .contacto .div2 {
   display: flex;
   justify-content: space-evenly;
@@ -1001,40 +1240,47 @@ body {
   background-color: #5eb62f;
   border-radius: 25px;
 }
+
 .contacto .div2 .sugerencia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
 }
+
 .contacto .div2 .sugerencia h2 {
   font-family: "Zalando Sans SemiExpanded";
   font-weight: 500;
   font-size: 40px;
   padding-bottom: 10px;
 }
+
 .contacto .div2 .sugerencia h3 {
   font-family: "Zalando Sans SemiExpanded";
   font-weight: 100;
   font-size: 20px;
 }
+
 .contacto .div2 div {
   display: flex;
   justify-content: space-around;
   align-items: end;
 }
+
 .contacto .div2 div form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
 }
+
 .contacto .div2 div form label {
   font-family: "Zalando Sans SemiExpanded";
   font-size: 30px;
   font-weight: 100;
   padding-bottom: 5px;
 }
+
 .contacto .div2 div form textarea {
   font-family: "Zalando Sans SemiExpanded";
   width: 300px;
@@ -1043,15 +1289,18 @@ body {
   border-radius: 10px;
   border: none;
 }
+
 .contacto .div2 div a {
   padding-left: 15px;
 }
+
 .contacto .div2 div a .fin {
   font-size: 20px;
   background-color: rgb(0, 93, 100);
   width: 150px;
   border-radius: 10px;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .contacto .div2 {
     display: flex;
@@ -1061,28 +1310,34 @@ body {
     height: 90%;
     border-radius: 20px;
   }
+
   .contacto .div2 .sugerencia h2 {
     text-align: center;
     font-weight: 500;
     font-size: 35px;
     padding-bottom: 20px;
   }
+
   .contacto .div2 .sugerencia h3 {
     text-align: center;
     font-size: 15px;
   }
+
   .contacto .div2 div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
+
   .contacto .div2 div form label {
     text-align: center;
   }
+
   .contacto .div2 div form textarea {
     width: 250px;
   }
+
   .contacto .div2 div a {
     padding-top: 20px;
     padding-left: 0px;
@@ -1092,16 +1347,19 @@ body {
 .fotter {
   height: 12vh;
 }
+
 .fotter h2 {
   padding-top: 45px;
   text-align: center;
   font-size: 20px;
   margin-bottom: 0;
 }
+
 @media (min-width: 320px) and (max-width: 430px) {
   .fotter {
     height: 12vh;
   }
+
   .fotter h2 {
     padding-top: 45px;
     font-size: 11px;

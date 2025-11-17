@@ -96,12 +96,18 @@
                     }
 
                     .carousel-caption {
+                        @include v.display(column, center, center);
+                        position: static;
                         h5 {
                             font-size: 20px;
+                            margin: 0;
+                            width: 90%;
                         }
 
                         p {
                             font-size: 10px;
+                            margin: 0;
+                            width: 90%;
                         }
                     }
                 }
@@ -213,17 +219,18 @@
 
         .absorcion {
             @include v.display(column, space-around, center);
-            padding: 20px;
+            padding: 15px;
             width: 100%;
             color: #fff;
 
             h2 {
+                padding-top: 10px;
                 font-weight: 800;
                 font-size: 25px;
-                padding-bottom: 10px;
             }
 
             p {
+                padding-bottom: 10px;
                 font-weight: 500;
                 font-size: 15px;
                 margin: 0;
@@ -232,17 +239,18 @@
 
         .distribucion {
             @include v.display(column, space-around, center);
-            padding: 20px;
+            padding: 15px;
             width: 100%;
             color: #fff;
 
             h2 {
+                padding-top: 10px;
                 font-weight: 800;
                 font-size: 25px;
-                padding-bottom: 10px;
             }
 
             p {
+                padding-bottom: 10px;
                 font-weight: 500;
                 font-size: 15px;
                 margin: 0;
@@ -251,17 +259,18 @@
 
         .metabolismo {
             @include v.display(column, space-around, center);
-            padding: 20px;
+            padding: 15px;
             width: 100%;
             color: #fff;
 
             h2 {
+                padding-top: 10px;
                 font-weight: 800;
                 font-size: 25px;
-                padding-bottom: 10px;
             }
 
             p {
+                padding-bottom: 10px;
                 font-weight: 500;
                 font-size: 15px;
                 margin: 0;
@@ -270,17 +279,18 @@
 
         .excrecion {
             @include v.display(column, space-around, center);
-            padding: 20px;
+            padding: 15px;
             width: 100%;
             color: #fff;
 
             h2 {
+                padding-top: 10px;
                 font-weight: 800;
                 font-size: 25px;
-                padding-bottom: 10px;
             }
 
             p {
+                padding-bottom: 10px;
                 font-weight: 500;
                 font-size: 15px;
                 margin: 0;
