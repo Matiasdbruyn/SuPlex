@@ -68,6 +68,27 @@
         grid-area: f;
     }
 
+    @include v.tablet {
+        padding: 20px 20px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "a a"
+            "a a"
+            "b d"
+            "c d"
+            "e e"
+            "f f"
+        ;
+
+        .item {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+
     @include v.celular {
         padding: 20px 20px;
         gap: 10px;
@@ -129,6 +150,30 @@
         height: 100%;
     }
 
+    @include v.tablet {
+        @include v.display(column, center, center);
+
+        div {
+            h2 {
+                text-align: center;
+                font-weight: 800;
+                font-size: 25px;
+            }
+
+            ul {
+                padding-left: 50px; 
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        img {
+            width: 220px;
+            height: 220px;
+        }
+    }
+
     @include v.celular {
         @include v.display(column, space-evenly, center);
 
@@ -140,15 +185,16 @@
             }
 
             ul {
+                padding-left: 30px; 
                 li {
-                    font-size: 20px;
+                    font-size: 15px;
                 }
             }
         }
 
         img {
-            width: 60%;
-            height: 40%;
+            width: 200px;
+            height: 200px;
         }
     }
 }
@@ -181,6 +227,26 @@
             text-align: center;
             font-size: 30px;
             font-weight: 200;
+        }
+    }
+
+    @include v.tablet {
+        @include v.display(column, space-around, center);
+
+        .div {
+            width: 90%;
+            height: 60%;
+            padding: 10px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 200;
+            }
         }
     }
 

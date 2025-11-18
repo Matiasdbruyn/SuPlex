@@ -42,9 +42,41 @@
                     font-weight: 500;
                     transition-duration: 0.5s;
                 }
-            }:hover {
+            }
+
+            :hover {
                 transform: scale(1.2);
                 color: v.$background-total;
+            }
+        }
+    }
+
+    @include v.tablet {
+        @include v.display(column, space-evenly, center);
+        padding: 0px 20px;
+
+        .logo {
+            font-size: 20px;
+        }
+
+        nav {
+            padding: 0px 0px;
+            width: 100%;
+            border-radius: 12px;
+
+            ul {
+                gap: 5px;
+                justify-content: space-evenly;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                li {
+                    padding-bottom: 5px;
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }

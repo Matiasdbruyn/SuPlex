@@ -12,6 +12,14 @@
         padding-top: 50px;
         color: black;
 
+        @include v.tablet {
+            font-size: 35px;
+            text-align: right;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
         @include v.celular {
             font-size: 30px;
             text-align: right;
@@ -63,6 +71,44 @@
                 width: 50%;
                 border: none;
                 background-color: v.$boton-color;
+            }
+        }
+    }
+
+    @include v.tablet {
+        @include v.display(column, space-between, center);
+        height: 150vh;
+
+        .card {
+            align-items: center;
+
+            img {
+                width: 55%;
+                height: 47%;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            .card-body {
+                @include v.display(column, space-around, center);
+                padding: 5px;
+
+                h2 {
+                    font-size: 28px;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                p {
+                    padding: 10px;
+                    font-size: 12px;
+                    margin: 0;
+                }
+
+                .btn {
+                    font-size: 15px;
+                    width: 35%;
+                }
             }
         }
     }

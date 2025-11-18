@@ -75,6 +75,45 @@
             }
         }
 
+        @include v.tablet {
+            @include v.display(column, space-evenly, center);
+            height: 90%;
+            border-radius: 20px;
+
+            .sugerencia {
+                h2 {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 40px;
+                    padding-bottom: 20px;
+                }
+
+                h3 {
+                    text-align: center;
+                    font-size: 20px;
+                }
+            }
+
+            div {
+                @include v.display(column, space-around, center);
+
+                form {
+                    label {
+                        text-align: center;
+                    }
+
+                    textarea {
+                        width: 250px;
+                    }
+                }
+
+                a {
+                    padding-top: 20px;
+                    padding-left: 0px;
+                }
+            }
+        }
+
         @include v.celular {
             @include v.display(column, space-evenly, center);
             height: 90%;
